@@ -1,0 +1,528 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+   font-family: 'Noto Serif JP', serif;
+}
+
+html{font-size: 10px;}
+body{
+    font-size: 1.6rem;
+    width: 100%;
+    height: 100vh;
+    
+}
+h2,
+h1{
+    letter-spacing: 2px;
+}
+
+h2::after{
+    content: '';
+    display: block;
+    width: 200px;
+    height: 2px;
+    background-color: rgba(255, 140, 0, 1);
+    margin: 20px auto 0 auto;
+    
+}
+
+/* backgroungd color: rgba(255, 140, 0, 1) */
+
+
+/* -----------headear page--------- */
+
+#header{
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80) no-repeat center fixed;
+    background-size: cover;
+    
+    width: 100%;
+    height: 100%;
+    
+    
+}
+
+nav img{
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    margin: 10px 0 0 50px;
+    
+}
+
+nav{
+    background-color:rgba(0, 128, 128,.5);
+    width: 100%;
+    height: 20vh;
+}
+
+
+label .outline{
+    color: white;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin: 50px 20px 0 0;
+    cursor: pointer;
+    display: none;
+
+}
+#check{display: none;}
+
+nav ul{
+    float: right;
+    padding: 50px 50px 0 0;
+    background-color:;
+    
+}
+
+nav ul li{
+   display: inline-block; 
+   padding: 0 10px;
+   
+   
+   
+}
+nav ul li a{
+    color: white;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 200;
+    
+}
+
+    
+
+#hero-text {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    
+
+    
+}
+#hero-text h1{
+    color: white;
+    font-size: 4rem;
+    font-weight: 100;
+    text-align: center;
+    
+}
+form{
+    margin:20px 0 0 0px;
+}
+form .btn{
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+    
+    transition: .5s;
+    font-size: 1.6rem;
+
+    
+}
+form .sign-up{
+    margin: 0 0 0 30px;
+    background-color:rgba(255, 140, 0, 1);
+    border: none;
+    outline-style: none;
+    width: 200px;
+    cursor: pointer;
+    
+}
+form .enter-email{
+    background-color: rgba(44, 62, 80,0.5);
+    border: 1px solid rgba(255, 140, 0,1);
+    outline-style: none;
+    width: 250px;
+    font-size: ;
+    
+}
+form .sign-up:hover{
+    background-color: rgba(211, 84, 0,1.0);
+}
+
+form .enter-email:hover{
+     border: 1px solid rgba(211, 84, 0,1.0);
+ }  
+
+
+#form ::placeholder{
+    color:rgba(236, 240, 241,0.5);
+    padding-left: 10px;
+ 
+}
+#form :hover::placeholder{
+    color:white;
+ 
+}
+
+
+/* -----------------section features page------- */
+
+#whole-section-features{
+    background-color: rgba(223, 230, 233,0.5);
+    width: 100%;
+    height: auto;
+}
+
+ 
+#head-line{
+    width: 100%;
+    /* display: block; */
+    text-align: center;
+    margin:  auto;
+    padding: 50px 0 0 0;
+
+}
+#head-line p{ 
+    margin: 20px 5px;
+    text-align: justify;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+#features-dis{
+    display: flex;
+    margin: 50px auto;
+    
+
+}
+
+
+.individual-dis{
+    margin: 0 10px;
+    text-align: justify;
+}
+
+
+#video{
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    background-color:rgba(223, 230, 233,0.2);
+    
+}
+iframe{
+    margin: 0 0 50px 0;
+}
+.individual-dis ion-icon{
+    width: 50px;
+    height: 50px;
+    color:rgba(255, 140, 0,1) ;
+}
+
+/* -----section-how it works--------- */
+
+#howitworks-headline{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 20px;
+    letter-spacing:2px ;
+}
+
+
+
+#section-howitworks{
+    background-color:rgba(223, 230, 233,0.5);
+    width: 100%;
+    height: auto;
+    margin: auto;
+    transition:  .5s;
+}
+
+
+
+#app-img{ 
+    flex:1;
+}
+#steps{
+    flex:1;
+}
+#steps ol{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 20px 20px;
+
+}
+
+
+#app-img img{
+    height: 400px;
+    display: block;
+    float: right;
+    
+    
+}
+
+
+#steps ol li span{
+    /* display: inline-block; */
+    font-size: 20px;
+    border: 2px solid rgba(255, 140, 0, 1);
+    border-radius: 50%;
+    padding:9px 0 0 17px;
+    height: 50px;
+    width: 50px;
+    display: block;
+    float: left; 
+    margin:0 15px 0 0;
+    
+}
+
+
+
+
+
+
+
+
+/* ------section-meal-------- */
+
+
+
+#section-meal{
+    width: 100%;
+    height:auto;
+    margin: auto;
+    background-color: rgba(223, 230, 233,0.5);
+    overflow: hidden;
+    
+}
+
+/* #meal-img div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+#meal-img .photo{
+    width: 100%;
+    overflow: hidden;
+}
+
+
+
+#meal-img img{
+    
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: auto;
+    opacity: .6;
+    transform: scale(1.15);
+    transition: opacity 0.5s, transform 0.5s;
+    
+}
+#meal-img img:hover{
+    opacity: 1;
+    transform: scale(1.03);
+    
+}
+/* #meal-img{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-auto-rows: 200px;
+    justify-items: center;
+    grid-gap: 0;
+    grid-auto-flow: dense;
+}
+.photo{
+    width: 100%;
+    overflow: hidden;
+}
+#meal-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.6;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+    
+}
+#meal-img img:hover{
+    opacity: 1;
+    transform: scale(1.03);
+} */
+
+
+/* -----section-price------------ */
+
+#section-price{background-color: rgba(223, 230, 233,0.5)}
+#section-price-headline{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+    letter-spacing: 2px;
+}
+
+
+
+.price-options{
+    margin: 50px 20px;
+    width: 300px;
+    height: 350px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    border: rgba(255, 140, 0, 1) 1px solid;
+    
+}
+hr{
+    border: rgba(255, 140, 0, 1) 1px solid;
+    margin: 10px auto;
+    width: 200px;
+    height: 1px;
+}
+.price-include ol{
+    display: block;
+}
+.price-include ol ion-icon{
+    width: 2rem;
+    height: 2rem;
+    margin: auto 5px auto auto;
+    color: rgba(255, 140, 0, 1);
+}
+.sing-button{
+    margin: auto; 
+    width: 100%;
+    text-align: center;
+}
+.sing-button input{
+    width: 150px;
+    height: 40px;
+    margin: auto;
+    border-radius: 10px;
+    background-color: rgba(255, 140, 0, 1);
+    outline-style: none;
+    color: white;
+    font-size: 1.6rem;
+    cursor: pointer;
+    border: none;
+
+}
+.sing-button input:hover{
+    background-color: rgba(211, 84, 0,1.0);
+}
+.price-lot h3{padding-bottom:10px ;}
+.price-tag{
+    color:rgba(255, 140, 0, 1) ; padding-bottom: 10px;}
+
+.price-tag span{
+    font-size: 4rem;
+    font-weight: 100;}
+
+.price-discription{font-size: 1.3rem;}]
+#price-include ol{
+    display: inline-block;
+}
+
+#price-include ol ion-icon{
+    display: block;
+}
+
+
+/* -------section-contract--------- */
+
+
+#contract-headline{
+    width: 100%;
+    margin: 20px auto auto auto;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+#section-contract{
+    width: 100%;
+    height: auto;
+    
+}
+
+
+form :nth-child(12),
+form :nth-child(8)
+{border: none;}
+.input input:nth-child(2){margin-left: 10px;}
+
+
+
+
+
+#contract-form button{
+    width: 150px;
+    height: 40px;
+    margin: auto;
+    border-radius: 10px;
+    background-color: rgba(255, 140, 0, 1);
+    outline-style: none;
+    color: white;
+    font-size: 1.6rem;
+    cursor: pointer;
+    border: none;
+}
+#contract-form button:hover{
+    background-color: rgba(211, 84, 0,1.0);
+}
+
+/* ------------section-footer--------- */
+
+.section-footer{
+    background-color: rgba(25, 42, 86,1.0);
+    width: 100%;
+    color: rgba(164, 176, 190,1.0);
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    width: 100%;
+    margin: auto;
+    
+}
+
+.link-page li{
+    margin: 0 10px;
+}
+
+
+
+
+.social-media li{
+    margin:0 10px;
+}
+.social-media a {
+    color: white;
+    
+}
+.social-media ion-icon {
+    width: 20px;
+    height: 20px;
+    
+}
+.footer-p{
+    width: 100%;
+    margin:20px auto auto auto;
+    padding:0 0 50px 0;
+    text-align: center;
+}
+
+
+
